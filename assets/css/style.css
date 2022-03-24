@@ -1,0 +1,170 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+   --white-color: #fff;
+   --text-color: rgb(40, 40, 40);
+   --red-color: rgb(192, 14, 14);
+   --header-height: 60px;
+}
+
+html{
+   font-size: 62.5% !important;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul{
+   list-style: none;
+   padding-left: 0;
+}
+a{
+   text-decoration: none;
+}
+/* header */
+.header{
+   width: 100%;
+   height: var(--header-height);
+   background-color: var(--white-color);
+}
+
+.container{
+   height: var(--header-height);
+}
+
+.header-wrapper{
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-brand{
+   width: 200px;
+   height: var(--header-height);
+}
+
+.header-brand img{
+   width: 100%;
+   height: var(--header-height);
+   object-fit: cover;
+}
+
+.header--navbar{
+   flex: 1;
+   height: var(--header-height);
+   text-align: end;
+}
+.header-navbar-list{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-bottom: 0;
+   padding-left: 0;
+   line-height: var(--header-height);
+}
+
+.header-navbar-list-item{
+   position: relative;
+}
+.header-navbar-list-item:hover .header-inner-list{
+   display: block;
+}
+
+.header-navbar-list-item a{
+   padding: 12px;
+   color: var(--text-color);
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.header-inner-list{
+   position: absolute;
+   z-index: 5;
+   top:80%;
+   width: 150%;
+   left: 0;
+   border-radius: 3px;
+   background-color: #000;
+   display: none;
+   animation: moveIn linear 0.2s forwards;
+   will-change: translateY,opacity;
+   transition: opacity 0 linear 0.2s;
+}
+
+@keyframes moveIn {
+   from{
+      opacity: 0;
+      transform: translateY(20%);
+   }
+   to{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+
+.header-inner-list-item{
+   line-height: 1.8rem;
+   padding: 8px 0 8px 12px;
+   text-align: start;
+   position: relative;
+}
+
+.header-inner-list-item:hover,
+.link-inner-list-item:hover{
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-inner-list-item:hover .link-inner-list{
+   display: block;
+}
+
+.link-inner-list-item a,
+.header-inner-list-item a{
+   color: rgba(255, 255, 255, 0.9);
+   display: block;
+   height: 100%;
+   padding: 0;
+   font-weight: 400;
+}
+
+.link-inner-list-item{
+   line-height: 1.8rem;
+   padding: 8px 0 8px 12px;
+   text-align: start;
+}
+
+.link-inner-list{
+   z-index: 5;
+   border-radius: 3px;
+   position: absolute;
+   display: none;
+   top: 0;
+   min-width: 110%;
+   right: -115%;
+   background-color: #000;
+   animation: moveIn linear 0.2s forwards;
+   will-change: translateY,opacity;
+}
+
+.link-inner-list::after{
+   content: "";
+   position: absolute;
+   display: block;
+   width: 20px;
+   height: 200px;
+   top: 0;
+   left: -5%;
+}
+
+.content-wrapper{
+   padding: 0;
+}
+
+.carousel--img{
+   height: 60vh;
+   object-fit: cover;
+}
