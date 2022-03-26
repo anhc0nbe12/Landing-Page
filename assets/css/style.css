@@ -295,9 +295,25 @@ a{
    justify-content: center;
    margin-left: 35px;
 }
+/* feature job */
 
+.feature-job-offer{
+   background-color: rgba(38, 38, 192,0.7);
+}
+
+.border--circle{
+   border-radius: 50px;
+   background-color: rgba(134, 26, 26,0.8);
+   width: 20px;
+   height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
 @media screen and (max-width:768px) {
    .header--navbar{
       display: none;
    }
 }
+
