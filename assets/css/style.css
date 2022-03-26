@@ -11,8 +11,10 @@
    --header-height: 60px;
 }
 
+
+
 html{
-   font-size: 62.5% !important;
+   font-size: 10px;
    font-family: 'Roboto', sans-serif;
 }
 
@@ -165,6 +167,137 @@ a{
 }
 
 .carousel--img{
-   height: 60vh;
+   height: 75vh;
    object-fit: cover;
+}
+
+/* content img */
+.content{
+   height: 75vh;
+   width: 100%;
+}
+
+.content-wrapper{
+   height: 100%;
+   width: 100%;
+}
+
+.content-img{
+   background-image: url("../img/background.png") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+  background-position:  20% 30%; 
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content-img-text{
+   position: absolute;
+   width: 100%;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-30%);
+}
+
+.content-img-heading{
+   text-align: center;
+}
+
+.heading-text{
+   font-size:4.6rem !important;
+}
+
+.content-search-wrapper{
+   background-color: rgb(74, 146, 146);
+   height: 100px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+}
+.search-field{
+   max-width: 350px;
+   width: 100%;
+   display: flex;
+   align-self: center;
+}
+
+.search-field + .search-field {
+   margin-left: 14px;
+}
+
+.search-field:first-child{
+   margin-left: 20px;
+}
+.search-field:last-child{
+   margin-right: 20px;
+}
+
+.search-field select,
+.search-field button,
+.search-field input {
+   width: 100%;
+   padding: 8px ;
+   font-size: 1.6rem;
+   border: 0;
+   outline: none;
+   border-radius: 3px;
+}
+
+.card-wrapper{
+   height: 400px;
+}
+
+.card-img--bg-1 {
+   background-image: url('../img/jobcareer.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 8px;
+   height: 100%;
+}
+
+.card-img--bg-2 {
+   background-image: url('../img/membership.png');
+   background-size: cover;
+   padding: 8px;
+   background-repeat: no-repeat;
+   height: 100%;
+}
+
+.card-img--bg-3 {
+   background-image: url('../img/human_and_lap.png');
+   background-size: cover;
+   padding: 8px;
+   background-repeat: no-repeat;
+   height: 100%;
+
+}
+
+/* job categories */
+.category--img{
+   width: 36px;
+   height: 36px;
+   border-radius: 50px;
+   overflow: hidden;
+}
+
+.category--img img{
+   height: 100%;
+   width: 100%;
+}
+
+.category-item-heading {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   margin-left: 35px;
+}
+
+@media screen and (max-width:768px) {
+   .header--navbar{
+      display: none;
+   }
 }
