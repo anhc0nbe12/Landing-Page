@@ -10,7 +10,9 @@
    --red-color: rgb(192, 14, 14);
    --header-height: 60px;
 }
-
+hr{
+   margin-bottom: 0;
+}
 
 
 html{
@@ -396,6 +398,8 @@ a{
 
 .feature-job-offer{
    background-color: rgba(38, 38, 192,0.7);
+   padding: 48px 12px 64px 12px;
+   margin: 70px 0 !important;
 }
 
 .feature-job-text{
