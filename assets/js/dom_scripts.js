@@ -27,6 +27,7 @@ const trigger_navbar_3 = document.querySelectorAll(".navbar-tablet-list-child-he
 
 
 trigger_navbar_3.forEach((item) => {
+   // xóa cộng icon nếu như k có j để mở
    if(!item.nextElementSibling){
       item.childNodes[3].style.display = 'none'
    }
